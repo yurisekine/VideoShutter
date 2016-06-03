@@ -21,13 +21,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+         NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: "takeStillPicture", userInfo: nil, repeats: true)
+        
         // 画面タップでシャッターを切るための設定
         let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "tapped:")
         // デリゲートをセット
         tapGesture.delegate = self;
         // Viewに追加.
         self.view.addGestureRecognizer(tapGesture)
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -75,18 +78,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         // AVCaptureDevice: カメラやマイクなどのデバイスを設定
         for caputureDevice: AnyObject in AVCaptureDevice.devices() {
-            // 背面カメラを取得
-            if caputureDevice.position == AVCaptureDevicePosition.Back {
+            // 前面カメラを取得
+            if caputureDevice.position == AVCaptureDevicePosition.Front { //背面Front を　Backに
                 camera = caputureDevice as? AVCaptureDevice
             }
-            // 前面カメラを取得
-            //if caputureDevice.position == AVCaptureDevicePosition.Front {
-            //    camera = caputureDevice as? AVCaptureDevice
-            //}
         }
         
         // カメラからの入力データ
-        // swift 2.0
         do {
             input = try AVCaptureDeviceInput(device: camera) as AVCaptureDeviceInput
         } catch let error as NSError {
@@ -150,6 +148,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             self.imageView.image = image
             
             // UIImageViewをビューに追加
+            
+            //ここを消すとプレビューがなくなるけど撮影はできるらしい まだ未検証
             self.view.addSubview(self.imageView)
         }
     }
@@ -189,6 +189,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         print("タップ")
         takeStillPicture()
     }
+    func takewithTime() {
+        
+        
+        takeStillPicture()
+    }
+    
     
     func takeStillPicture(){
         if var connection:AVCaptureConnection? = output.connectionWithMediaType(AVMediaTypeVideo){
