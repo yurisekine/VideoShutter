@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C2C41D4F696CCCFCEF0B5F089567C31A4A4AA777",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C2C41D4F696CCCFCEF0B5F089567C31A4A4AA777" : 0,
+    "9F9D1B07B029BFAE1CDB5CB7F5BF94E0E9AD6723" : 0,
+    "B20A02D6016CD86869B80AEEFEC889A271CFEE53" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EF57FA94-D8AF-4125-90A4-9FAAFC9E4844",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C2C41D4F696CCCFCEF0B5F089567C31A4A4AA777" : "VideoShutter\/",
+    "9F9D1B07B029BFAE1CDB5CB7F5BF94E0E9AD6723" : "",
+    "B20A02D6016CD86869B80AEEFEC889A271CFEE53" : "..\/..\/Downloads\/SmileSwift-master"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VideoShutter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VideoShutter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yurisekine\/background-fetch.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9F9D1B07B029BFAE1CDB5CB7F5BF94E0E9AD6723"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yurisekine\/smile.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B20A02D6016CD86869B80AEEFEC889A271CFEE53"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yurisekine\/VideoShutter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C2C41D4F696CCCFCEF0B5F089567C31A4A4AA777"
+    }
+  ]
+}

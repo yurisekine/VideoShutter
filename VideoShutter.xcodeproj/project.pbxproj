@@ -14,6 +14,11 @@
 		D05A7F6E1CF5664100247E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D05A7F6C1CF5664100247E74 /* LaunchScreen.storyboard */; };
 		D05A7F791CF5664100247E74 /* VideoShutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A7F781CF5664100247E74 /* VideoShutterTests.swift */; };
 		D05A7F841CF5664100247E74 /* VideoShutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A7F831CF5664100247E74 /* VideoShutterUITests.swift */; };
+		D07E862F1D01DABA009BE67C /* IMG_9757.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D07E862A1D01DABA009BE67C /* IMG_9757.JPG */; };
+		D07E86301D01DABA009BE67C /* IMG_9758.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D07E862B1D01DABA009BE67C /* IMG_9758.JPG */; };
+		D07E86311D01DABA009BE67C /* IMG_9759.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D07E862C1D01DABA009BE67C /* IMG_9759.JPG */; };
+		D07E86321D01DABA009BE67C /* IMG_9760.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D07E862D1D01DABA009BE67C /* IMG_9760.JPG */; };
+		D07E86331D01DABA009BE67C /* IMG_9761.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D07E862E1D01DABA009BE67C /* IMG_9761.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		D05A7F7F1CF5664100247E74 /* VideoShutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoShutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05A7F831CF5664100247E74 /* VideoShutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoShutterUITests.swift; sourceTree = "<group>"; };
 		D05A7F851CF5664100247E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07E862A1D01DABA009BE67C /* IMG_9757.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9757.JPG; path = "../../../../Downloads/SmileSwift-master/SmileSwift/IMG_9757.JPG"; sourceTree = "<group>"; };
+		D07E862B1D01DABA009BE67C /* IMG_9758.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9758.JPG; path = "../../../../Downloads/SmileSwift-master/SmileSwift/IMG_9758.JPG"; sourceTree = "<group>"; };
+		D07E862C1D01DABA009BE67C /* IMG_9759.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9759.JPG; path = "../../../../Downloads/SmileSwift-master/SmileSwift/IMG_9759.JPG"; sourceTree = "<group>"; };
+		D07E862D1D01DABA009BE67C /* IMG_9760.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9760.JPG; path = "../../../../Downloads/SmileSwift-master/SmileSwift/IMG_9760.JPG"; sourceTree = "<group>"; };
+		D07E862E1D01DABA009BE67C /* IMG_9761.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_9761.JPG; path = "../../../../Downloads/SmileSwift-master/SmileSwift/IMG_9761.JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 		D05A7F621CF5664100247E74 /* VideoShutter */ = {
 			isa = PBXGroup;
 			children = (
+				D07E862A1D01DABA009BE67C /* IMG_9757.JPG */,
+				D07E862B1D01DABA009BE67C /* IMG_9758.JPG */,
+				D07E862C1D01DABA009BE67C /* IMG_9759.JPG */,
+				D07E862D1D01DABA009BE67C /* IMG_9760.JPG */,
+				D07E862E1D01DABA009BE67C /* IMG_9761.JPG */,
 				D05A7F631CF5664100247E74 /* AppDelegate.swift */,
 				D05A7F651CF5664100247E74 /* ViewController.swift */,
 				D05A7F671CF5664100247E74 /* Main.storyboard */,
@@ -229,9 +244,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07E86321D01DABA009BE67C /* IMG_9760.JPG in Resources */,
 				D05A7F6E1CF5664100247E74 /* LaunchScreen.storyboard in Resources */,
+				D07E86311D01DABA009BE67C /* IMG_9759.JPG in Resources */,
+				D07E86301D01DABA009BE67C /* IMG_9758.JPG in Resources */,
 				D05A7F6B1CF5664100247E74 /* Assets.xcassets in Resources */,
 				D05A7F691CF5664100247E74 /* Main.storyboard in Resources */,
+				D07E86331D01DABA009BE67C /* IMG_9761.JPG in Resources */,
+				D07E862F1D01DABA009BE67C /* IMG_9757.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +504,7 @@
 				D05A7F8A1CF5664200247E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05A7F8B1CF5664200247E74 /* Build configuration list for PBXNativeTarget "VideoShutterTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				D05A7F8D1CF5664200247E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05A7F8E1CF5664200247E74 /* Build configuration list for PBXNativeTarget "VideoShutterUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				D05A7F901CF5664200247E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
