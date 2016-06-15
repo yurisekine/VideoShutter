@@ -200,7 +200,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     func takeStillPicture(){
         if var connection:AVCaptureConnection? = output.connectionWithMediaType(AVMediaTypeVideo){
             // アルバムに追加
-            UIImageWriteToSavedPhotosAlbum(self.imageView.image!, self, nil, nil)
+           // UIImageWriteToSavedPhotosAlbum(self.imageView.image!, self, nil, nil)
             
            // self.boardimageView.image = self.imageView.image//映る！！！！
           //  imageView.image = info[UIImagePickerControllerEditedImage] as? UIImage
@@ -212,7 +212,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     private func detectFaces() {
         
         //let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
-        
       //  dispatch_async(queue) {
             
             self.boardimageView.image = self.imageView.image
@@ -222,6 +221,11 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
          //   self.boardimageView.image = self.originalImage
             //self.boardimageView.image = UIImage(named: "IMG_9757.JPG")
         
+        
+        UIGraphicsBeginImageContextWithOptions(self.imageView.image!.size, true, 0)
+        self.imageView.image!.drawInRect(CGRectMake(0, 0, self.imageView.image!.size.width, self.imageView.image!.size.height))
+        self.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
         
         // create CGImage from image on storyboard.
           guard let image = self.imageView.image, cgImage = image.CGImage else {
@@ -262,10 +266,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 
                 resultString.appendContentsOf("\n")
                 
-               
-                resultString.appendContentsOf("feature中入っているよお")
             }
-            resultString.appendContentsOf("aa")
             dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 self.outputTextView.text = "\(resultString)"
             }
